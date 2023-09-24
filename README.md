@@ -22,7 +22,7 @@ sudo dnf -y install apptainer-1.2.3-1.x86_64.rpm
 ```
 mkdir -p ~/data/git
 cd ~/data/git
-git clone git@github.com:nine-sarayut/nf_bio.git
+git clone git@github.com:mubioinformatics/nf_bio.git
 cd ~/data/git/nf_bio
 ```
 
