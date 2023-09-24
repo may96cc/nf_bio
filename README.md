@@ -31,14 +31,17 @@ cd ~/data/git/nf_bio
 docker system prune -a
 ```
 
-### Build image
-```
-docker build -t winuthayanon/nf_bio:almalinux8 . -f Dockerfile
-```
+# Note 1 please change `winuthayanon` to `your-docker-username`
+# Note 2 Please change `sw7v6` to your `login-name`
 
 ### Login to docker hub
 ```
 docker login -u winuthayanon
+```
+
+### Build image
+```
+docker build -t winuthayanon/nf_bio:almalinux8 . -f Dockerfile
 ```
 
 ### Push image to Docker Hub
