@@ -31,8 +31,8 @@ cd ~/data/git/nf_bio
 docker system prune -a
 ```
 
-### * Please change `winuthayanon` to `your-docker-username` *
-### * Please change `sw7v6` to your `login-name` *
+### Please change `winuthayanon` to `your-docker-username`
+### Please change `sw7v6` to your `login-name`
 
 ### Login to docker hub
 ```
