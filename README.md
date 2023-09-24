@@ -63,7 +63,7 @@ singularity pull docker://winuthayanon/nf_bio:almalinux8
 singularity cache clean
 ```
 
-### Run Singularity
+### Run Singularity on your private server
 ```
 singularity run nf_bio_almalinux8.sif
 
