@@ -18,6 +18,11 @@ wget -c https://github.com/apptainer/apptainer/releases/download/v1.2.3/apptaine
 sudo dnf -y install apptainer-1.2.3-1.x86_64.rpm 
 ```
 
+### Optional remote login to private server
+```
+ssh -p 50077 ${USER}@bac.beenplus.com
+```
+
 ### Clone nf_bio
 ```
 mkdir -p ~/data/git
