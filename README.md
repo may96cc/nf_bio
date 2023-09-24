@@ -1,6 +1,6 @@
 # Dockerfile to build a Nextflow bioinformatics environment on AlmaLinux 8 
 
-### How to install docker on AlmaLinux 8    
+### Optional How to install docker on AlmaLinux 8    
 ```
 sudo dnf -y --refresh update
 sudo dnf -y upgrade
@@ -11,7 +11,7 @@ sudo systemctl start docker
 sudo systemctl enable docker
 ```
 
-### How to install Apptainer on AlmaLinux 8  
+### Optional How to install Apptainer on AlmaLinux 8  
 ```  
 sudo dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 wget -c https://github.com/apptainer/apptainer/releases/download/v1.2.3/apptainer-1.2.3-1.x86_64.rpm
