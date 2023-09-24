@@ -7,24 +7,6 @@ Sarayut (Nine) Winuthayanon: [LinkedIn](https://www.linkedin.com/in/winuthayanon
 ### Please change `winuthayanon` to `your-docker-username`
 ### Please change `sw7v6` to your `login-name`
 
-### Optional How to install docker on AlmaLinux 8    
-```
-sudo dnf -y --refresh update
-sudo dnf -y upgrade
-sudo dnf -y install yum-utils
-sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-sudo dnf -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-sudo systemctl start docker
-sudo systemctl enable docker
-```
-
-### Optional How to install Apptainer on AlmaLinux 8  
-```  
-sudo dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-wget -c https://github.com/apptainer/apptainer/releases/download/v1.2.3/apptainer-1.2.3-1.x86_64.rpm
-sudo dnf -y install apptainer-1.2.3-1.x86_64.rpm 
-```
-
 ### Optional remote login to private server
 ```
 ssh -p 50077 ${USER}@bac.beenplus.com
