@@ -60,7 +60,7 @@ cd ~/data/git/nf_bio/test
 singularity pull docker://winuthayanon/nf_bio:almalinux8
 ```
 
-# Or Pull Singularity image on Cluster
+### Or Pull Singularity image on Cluster
 ```
 ssh ${USER}@lewis42.rnet.missouri.edu
 srun -p Gpu --account ircf -N1 -n4 -t 0-2:00 --mem=32G --pty /bin/bash
