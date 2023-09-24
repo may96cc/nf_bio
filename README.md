@@ -53,7 +53,9 @@ docker push winuthayanon/nf_bio:almalinux8
 ```
 cd ~/data/git/nf_bio/test
 singularity pull docker://winuthayanon/nf_bio:almalinux8
+
 # or login to cluster to pull
+
 ssh ${USER}@lewis42.rnet.missouri.edu
 srun -p Gpu --account ircf -N1 -n4 -t 0-2:00 --mem=32G --pty /bin/bash
 module load singularity
