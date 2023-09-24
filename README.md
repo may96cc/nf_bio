@@ -1,5 +1,9 @@
 # Dockerfile to build a Nextflow bioinformatics environment on AlmaLinux 8 
 
+## Maintainer
+
+Sarayut (Nine) Winuthayanon: [LinkedIn](https://www.linkedin.com/in/winuthayanons/)
+
 ### Please change `winuthayanon` to `your-docker-username`
 ### Please change `sw7v6` to your `login-name`
 
