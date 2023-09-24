@@ -92,8 +92,11 @@ singularity run --bind $(pwd):/data nf_bio_almalinux8.sif
 
 ### Or on the Cluster
 ```
+cd ~/data/git/nf_bio/test
 SIF_FILE="/home/sw7v6/data/git/nf_bio/test/nf_bio_almalinux8.sif"
 singularity run --bind $(pwd):/data --writable-tmpfs --cleanenv ${SIF_FILE}
+cd /data
+
 # Command line below it's going to use your home directory to
 singularity exec --bind $(pwd):/data --writable-tmpfs --cleanenv ${SIF_FILE} /data/run.sh
 singularity exec --bind $(pwd):/data --writable-tmpfs --cleanenv ${SIF_FILE} nextflow run /data/test/main.nf --inputdir "/data/test/fastq_data" --outdir "/data/test/out_test" -work-dir "/storage/hpc/scratch/sw7v6/work"

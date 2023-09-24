@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /data/test
+cd /data
 nextflow run main.nf
