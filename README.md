@@ -33,29 +33,29 @@ docker system prune -a
 
 ### Build image
 ```
-docker build -t your-docker-account/nf_bio:almalinux8 . -f Dockerfile
+docker build -t winuthayanon/nf_bio:almalinux8 . -f Dockerfile
 ```
 
 ### Login to docker hub
 ```
-docker login -u your-docker-account
+docker login -u winuthayanon
 ```
 
 ### Push image to Docker Hub
 ```
-docker push your-docker-account/nf_bio:almalinux8
+docker push winuthayanon/nf_bio:almalinux8
 ```
 
 ### Pull Singularity image
 ```
 cd ~/data/git/nf_bio/test
-singularity pull docker://your-docker-account/nf_bio:almalinux8
+singularity pull docker://winuthayanon/nf_bio:almalinux8
 # or login to cluster to pull
 ssh ${USER}@lewis42.rnet.missouri.edu
 srun -p Gpu --account ircf -N1 -n4 -t 0-2:00 --mem=32G --pty /bin/bash
 module load singularity
 cd ~/data/git/nf_bio/test
-singularity pull docker://your-docker-account/nf_bio:almalinux8
+singularity pull docker://winuthayanon/nf_bio:almalinux8
 ```
 
 ### Clear Singularity cache
@@ -102,10 +102,10 @@ singularity exec --bind $(pwd):/data --writable-tmpfs --cleanenv ${SIF_FILE} nex
 
 ### Pull docker image
 ```
-docker pull your-docker-account/nf_bio:almalinux8
+docker pull winuthayanon/nf_bio:almalinux8
 ```
 
 ### Run image with mounted data volume
 ```
-docker run -it -v $PWD:/data your-docker-account/nf_bio:almalinux8
+docker run -it -v $PWD:/data winuthayanon/nf_bio:almalinux8
 ```
