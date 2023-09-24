@@ -54,13 +54,14 @@ docker build -t winuthayanon/nf_bio:almalinux8 . -f Dockerfile
 docker push winuthayanon/nf_bio:almalinux8
 ```
 
-### Pull Singularity image
+### Pull Singularity image on private server
 ```
 cd ~/data/git/nf_bio/test
 singularity pull docker://winuthayanon/nf_bio:almalinux8
+```
 
-# or login to cluster to pull
-
+# Or Pull Singularity image on Cluster
+```
 ssh ${USER}@lewis42.rnet.missouri.edu
 srun -p Gpu --account ircf -N1 -n4 -t 0-2:00 --mem=32G --pty /bin/bash
 module load singularity
