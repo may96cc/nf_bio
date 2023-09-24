@@ -79,8 +79,10 @@ singularity cache clean
 singularity run nf_bio_almalinux8.sif
 
 nextflow run main.nf
+# rm -rf .nextflow* out/ work/
 # or
 nextflow run main.nf --outdir out_test
+# rm -rf .nextflow* out_test/ work/
 ```
 
 ### Run Singularity with specific version
