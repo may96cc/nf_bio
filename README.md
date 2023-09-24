@@ -95,7 +95,7 @@ ssh ${USER}@lewis42.rnet.missouri.edu
 srun -p Gpu --account ircf -N1 -n4 -t 0-2:00 --mem=32G --pty /bin/bash
 
 cd ~/data/git/nf_bio/test
-SIF_FILE="/home/sw7v6/data/git/nf_bio/test/nf_bio_almalinux8.sif"
+SIF_FILE="~/data/git/nf_bio/test/nf_bio_almalinux8.sif"
 singularity run --bind $(pwd):/data --writable-tmpfs --cleanenv ${SIF_FILE}
 cd /data
 nextflow run main.nf
@@ -103,7 +103,7 @@ nextflow run main.nf
 
 # or
 cd ~/data/git/nf_bio/test
-SIF_FILE="/home/sw7v6/data/git/nf_bio/test/nf_bio_almalinux8.sif"
+SIF_FILE="~/data/git/nf_bio/test/nf_bio_almalinux8.sif"
 singularity exec --bind $(pwd):/data --writable-tmpfs --cleanenv ${SIF_FILE} /data/run.sh
 # rm -rf .nextflow* out/ work/
 ```
