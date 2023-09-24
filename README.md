@@ -96,10 +96,14 @@ cd ~/data/git/nf_bio/test
 SIF_FILE="/home/sw7v6/data/git/nf_bio/test/nf_bio_almalinux8.sif"
 singularity run --bind $(pwd):/data --writable-tmpfs --cleanenv ${SIF_FILE}
 cd /data
+nextflow run main.nf
+# rm -rf .nextflow* out/ work/
 
-# Command line below it's going to use your home directory to
+# or
+cd ~/data/git/nf_bio/test
+SIF_FILE="/home/sw7v6/data/git/nf_bio/test/nf_bio_almalinux8.sif"
 singularity exec --bind $(pwd):/data --writable-tmpfs --cleanenv ${SIF_FILE} /data/run.sh
-singularity exec --bind $(pwd):/data --writable-tmpfs --cleanenv ${SIF_FILE} nextflow run /data/test/main.nf --inputdir "/data/test/fastq_data" --outdir "/data/test/out_test" -work-dir "/storage/hpc/scratch/sw7v6/work"
+# rm -rf .nextflow* out/ work/
 ```
 
 # How to run with Docker
