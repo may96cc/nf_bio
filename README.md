@@ -92,8 +92,7 @@ singularity run --bind $(pwd):/data nf_bio_almalinux8.sif
 
 ### Or on the Cluster
 ```
-SIF_FILE="/home/sw7v6/sif/nf_bio_almalinux8.sif"
-SIF_FILE="/home/sw7v6/data/git/sif/nf_bio_almalinux8.sif"
+SIF_FILE="/home/sw7v6/data/git/nf_bio/test/nf_bio_almalinux8.sif"
 singularity run --bind $(pwd):/data --writable-tmpfs --cleanenv ${SIF_FILE}
 # Command line below it's going to use your home directory to
 singularity exec --bind $(pwd):/data --writable-tmpfs --cleanenv ${SIF_FILE} /data/run.sh
