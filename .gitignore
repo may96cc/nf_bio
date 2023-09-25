@@ -1,0 +1,6 @@
+*.sif
+.nextflow*
+out/
+work/
+results/
+.DS_Store
